@@ -202,7 +202,7 @@ Track these metrics for every API request:
 
 ## 10. Auto-Caching vs Manual Cache Control
 
-The Anthropic API supports **automatic caching** for prompts ≥1024 tokens (2048 for Claude 3.5 Haiku). No explicit cache breakpoints needed — the system automatically caches the longest matching prefix.
+The Anthropic API supports **automatic caching** for prompts ≥1024 tokens (2048 for Claude Haiku 4.5). No explicit cache breakpoints needed — the system automatically caches the longest matching prefix.
 
 **Manual cache control** uses the `cache_control` parameter for explicit breakpoints:
 

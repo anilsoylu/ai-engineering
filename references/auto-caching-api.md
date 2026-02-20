@@ -5,8 +5,8 @@
 The Anthropic API automatically caches prompt prefixes that meet minimum token thresholds. No explicit `cache_control` breakpoints are required.
 
 **Minimum token thresholds for auto-caching:**
-- Claude Opus 4 / Sonnet 4: 1024 tokens
-- Claude 3.5 Haiku: 2048 tokens
+- Claude Opus 4.6 / Sonnet 4.6: 1024 tokens
+- Claude Haiku 4.5: 2048 tokens
 
 When a request is sent, the system identifies the longest prefix that matches a previously cached request and serves those tokens from cache. The remaining tokens are processed normally.
 
@@ -18,7 +18,7 @@ For explicit control, add `cache_control: {"type": "ephemeral"}` to content bloc
 
 ```json
 {
-  "model": "claude-opus-4-20250514",
+  "model": "claude-opus-4-6-20260220",
   "max_tokens": 1024,
   "system": [
     {
